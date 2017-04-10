@@ -8,6 +8,10 @@ RUN apt-get update \
  && apt-get install -y \
     curl \
     docker-engine \
+    imagemagick \
+    make \
+    optipng \
+    pngquant \
     vim \
  && rm -rf /var/lib/apt/lists/* \
  && curl -L https://github.com/docker/compose/releases/download/1.9.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose \
